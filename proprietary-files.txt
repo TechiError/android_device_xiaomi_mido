@@ -1286,3 +1286,12 @@ vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|16baab27397ad493e845515c20ac0c0
 
 # Wi-Fi - from LA.UM.9.6.3.r1-06200-89xx.0
 vendor/bin/wcnss_service|4bf3962fa1444caca2d3497e71ae4cd2ba306aa1
+
+# Hotword enrollment
+-product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk;PRESIGNED|91c49e2f1f95fe76952eb55d7a936a997685b964
+-product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk;PRESIGNED|89b2c917c0c35489f10306f1627b2cf7cf6b59cf
+system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml|563a58554d9c0dd0608552b644fbf74519a447bb
+system_ext/framework/com.android.hotwordenrollment.common.util.jar|0492cd3db2e253e23b78e56fa8ea7b3a4b15edeb
+product/etc/permissions/privapp-permissions-google-hotword.xml|325ff76a3a1daa6eb1bdf0eb659fa31fa6e9d4ed
+product/etc/sysconfig/hotword-hiddenapi-package-whitelist.xml|a062041908164045e8b658d1cc4e8f3302f4bb90
+
