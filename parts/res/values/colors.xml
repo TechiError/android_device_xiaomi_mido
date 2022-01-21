@@ -14,9 +14,15 @@
 <resources>
     <color name="disabled_text_color">#66000000</color>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <color name="switchbar_background_color">@*android:color/material_grey_600</color>
     <color name="switchbar_switch_track_tint">#BFFFFFFF</color>
     <color name="switchbar_switch_thumb_tint">@android:color/white</color>
 =======
 >>>>>>> 78df153... mido: parts: import kcal implementation
+=======
+    <color name="switchbar_background_color">@*android:color/material_grey_600</color>
+    <color name="switchbar_switch_track_tint">#BFFFFFFF</color>
+    <color name="switchbar_switch_thumb_tint">@android:color/white</color>
+>>>>>>> 23db55e... mido: import theme.main for kcal
 </resources>
