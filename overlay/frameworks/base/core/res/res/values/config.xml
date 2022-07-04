@@ -499,9 +499,6 @@
         <item>0:2:15</item> <!-- ID0:Fingerprint:Strong -->
     </string-array>
 
-    <!-- Disable rounded corners on windows to improve graphics performance -->
-    <bool name="config_supportsRoundedCornersOnWindows">false</bool>
-
     <!-- Flag indicating whether the surface flinger has limited
         alpha compositing functionality in hardware.  If set, the window
         manager will disable alpha trasformation in animations where not
@@ -544,4 +541,7 @@
 
     <!-- Whether to select voice/data/sms preference without user confirmation. -->
     <bool name="config_voice_data_sms_auto_fallback">true</bool>
+
+    <!-- Whether to cancel fingerprint operation if not idle -->
+    <bool name="config_fpCancelIfNotIdle">true</bool>
 </resources>
