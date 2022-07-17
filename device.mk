@@ -161,6 +161,9 @@ PRODUCT_PACKAGES += \
     libmm-qcamera \
     libui_shim
 
+PRODUCT_PACKAGES += \
+    GrapheneCamera
+
 # Cgroup and task_profiles
 PRODUCT_COPY_FILES += \
     system/core/libprocessgroup/profiles/cgroups_28.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
@@ -188,11 +191,14 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service \
     gralloc.msm8953 \
     hwcomposer.msm8953 \
-    memtrack.msm8953 \
-    libqdMetaData \
+    libgralloc.system.qti \
+    libqdMetaData.system \
     libtinyxml \
     libvulkan \
-    vendor.display.config@1.0.vendor
+    memtrack.msm8953 \
+    vendor.display.config@1.0.vendor \
+    vendor.qti.hardware.display.allocator-service \
+    vendor.qti.hardware.display.mapper@2.0.vendor
 
 # Device-specific settings
 PRODUCT_PACKAGES += \
@@ -268,6 +274,10 @@ PRODUCT_PACKAGES += \
     ims-ext-common \
     ims_ext_common.xml \
     libims-shim
+
+# Inherit several Android Go Configurations(Beneficial for everyone, even on non-Go devices)
+PRODUCT_USE_PROFILE_FOR_BOOT_IMAGE := true
+PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/config/boot-image-profile.txt
 
 # Input
 PRODUCT_COPY_FILES += \
