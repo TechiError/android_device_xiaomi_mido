@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/corvus_mido.mk
+    $(LOCAL_DIR)/banana_mido.mk
 
 COMMON_LUNCH_CHOICES := \
-    corvus_mido-user \
-    corvus_mido-userdebug \
-    corvus_mido-eng
+    banana_mido-user \
+    banana_mido-userdebug \
+    banana_mido-eng
