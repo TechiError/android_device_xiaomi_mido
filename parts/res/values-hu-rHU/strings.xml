@@ -72,8 +72,6 @@
     <string name="dirac_preset_country">Country</string>
     <string name="dirac_preset_dance">Dance</string>
     <string name="dirac_preset_metal">Metál</string>
-<<<<<<< HEAD
-=======
 
     <!-- kcal -->
     <string name="presets_dialog_title">Válassza ki az Előbeállítás</string>
@@ -97,7 +95,6 @@
     <!-- QS tile -->
     <string name="dirac_qs_tile_title">Dirac hang</string>
 
->>>>>>> 06d1a6f... mido: parts: Translation updates
     <!-- Torch -->
     <string name="torch_title">Zseblámpa</string>
     <string name="torch_summary">A sárga/fehér LED maximális fényerejének beállítása</string>

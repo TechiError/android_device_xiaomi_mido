@@ -72,10 +72,7 @@
     <string name="dirac_preset_country">Кантри</string>
     <string name="dirac_preset_dance">Танцевальная</string>
     <string name="dirac_preset_metal">Металл</string>
-<<<<<<< HEAD
-     <!-- QS tile title -->
-    <string name="dirac_qs_tile_title">Dirac звук</string>
-=======
+
     <string name="dirac_preset_bass_booster">Усилитель басов</string>
     <string name="dirac_preset_live">Прямой эфир</string>
     <string name="dirac_preset_balanced">Сбалансированный</string>
@@ -139,7 +136,7 @@
      <!-- QS tile title -->
     <string name="dirac_qs_tile_title">Dirac звук</string>
 
->>>>>>> 06d1a6f... mido: parts: Translation updates
+
     <!-- Torch -->
     <string name="torch_title">Фонарик</string>
     <string name="torch_summary">Яркость белого/желтого светодиода</string>
