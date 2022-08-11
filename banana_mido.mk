@@ -33,11 +33,11 @@ PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR := Xiaomi
 BOARD_VENDOR := Xiaomi
 
-#Corvus Flags
+#Banana Flags
 TARGET_BOOT_ANIMATION_RES := 1080
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.banana.maintainer=ErroredX
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.banana.maintainer=EʀʀᴏʀᴇᴅX
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
