@@ -20,8 +20,13 @@ package org.lineageos.settings;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.util.Log;
 import android.provider.Settings;
+
+import androidx.preference.PreferenceManager;
+
+import java.lang.Math.*;
 
 import org.lineageos.settings.dirac.DiracUtils;
 import org.lineageos.settings.doze.DozeUtils;
@@ -29,11 +34,22 @@ import org.lineageos.settings.preferences.FileUtils;
 import org.lineageos.settings.soundcontrol.SoundControlSettings;
 import org.lineageos.settings.torch.TorchSettings;
 import org.lineageos.settings.vibration.VibratorStrengthPreference;
+import org.lineageos.settings.vibration.VibratorSettings;
+import org.lineageos.settings.vibration.VibratorOverrideModeSwitch;
 
 public class BootCompletedReceiver extends BroadcastReceiver implements Controller {
 
     private static final boolean DEBUG = false;
     private static final String TAG = "XiaomiParts";
+
+    private void restore(String file, boolean enabled) {
+        if (file == null) {
+            return;
+        }
+        if (enabled) {
+            FileUtils.setValue(file, "1");
+        }
+    }
 
     @Override
     public void onReceive(final Context context, Intent intent) {
@@ -57,6 +73,12 @@ public class BootCompletedReceiver extends BroadcastReceiver implements Controll
         FileUtils.setValue(SoundControlSettings.SPEAKER_GAIN_PATH, Settings.Secure.getInt(context.getContentResolver(),
                 SoundControlSettings.PREF_SPEAKER_GAIN, 0));
 
+        boolean enabled = false;
+        SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
+        enabled = sharedPrefs.getBoolean(VibratorSettings.PREF_VMAX_OVERRIDE_SWITCH, false);
+        restore(VibratorOverrideModeSwitch.getFile(), enabled);
+
+        // KCAL
         if (Settings.Secure.getInt(context.getContentResolver(), PREF_ENABLED, 0) == 1) {
             FileUtils.setValue(KCAL_ENABLE, Settings.Secure.getInt(context.getContentResolver(),
                     PREF_ENABLED, 0));
@@ -106,6 +128,5 @@ public class BootCompletedReceiver extends BroadcastReceiver implements Controll
                 SoundControlSettings.PREF_MICROPHONE_GAIN, 0));
         FileUtils.setValue(SoundControlSettings.SPEAKER_GAIN_PATH, Settings.Secure.getInt(context.getContentResolver(),
                 SoundControlSettings.PREF_SPEAKER_GAIN, 0));
-
     }
 }
