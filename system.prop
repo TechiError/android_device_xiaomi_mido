@@ -154,9 +154,6 @@ persist.mm.sta.enable=0
 # WFD
 persist.hwc.enable_vds=1
 
-# Zygote Preforking
-persist.device_config.runtime_native.usap_pool_enabled=true
-
 # Additional props
 ro.vendor.qti.cgroup_follow.enable=true \
 persist.vendor.qti.inputopts.enable=true \
