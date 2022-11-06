@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/corvus_mido.mk
+    $(LOCAL_DIR)/syberia_mido.mk
 
 COMMON_LUNCH_CHOICES := \
-    corvus_mido-user \
-    corvus_mido-userdebug \
-    corvus_mido-eng
+    syberia_mido-user \
+    syberia_mido-userdebug \
+    syberia_mido-eng
