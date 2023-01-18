@@ -52,13 +52,17 @@ public class BootCompletedReceiver extends BroadcastReceiver implements Controll
 
     @Override
     public void onReceive(final Context context, Intent intent) {
+
+        boolean enabled = false;
+        SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
+        enabled = sharedPrefs.getBoolean(VibratorSettings.PREF_VMAX_OVERRIDE_SWITCH, false);
+        restore(VibratorOverrideModeSwitch.getFile(), enabled);
+
         if (DozeUtils.isDozeEnabled(context) && DozeUtils.sensorsEnabled(context)) {
             if (DEBUG) Log.d(TAG, "Starting Doze service");
             DozeUtils.startService(context);
         }
         new DiracUtils(context).onBootCompleted();
-
-        VibratorStrengthPreference.restore(context);
 
         FileUtils.setValue(TorchSettings.TORCH_1_BRIGHTNESS_PATH,
                 Settings.Secure.getInt(context.getContentResolver(),
@@ -74,6 +78,15 @@ public class BootCompletedReceiver extends BroadcastReceiver implements Controll
                 SoundControlSettings.PREF_MICROPHONE_GAIN, 0));
         FileUtils.setValue(SoundControlSettings.SPEAKER_GAIN_PATH, Settings.Secure.getInt(context.getContentResolver(),
                 SoundControlSettings.PREF_SPEAKER_GAIN, 0));
+
+        // Dirac
+        int millis = 1 * 60 * 1000;  // 1min
+        try {
+            Thread.sleep(millis);
+            new DiracUtils(context).onBootCompleted();
+        } catch( Exception e) {
+            e.printStackTrace();
+        }
 
         boolean enabled = false;
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);

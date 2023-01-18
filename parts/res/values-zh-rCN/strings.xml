@@ -72,48 +72,4 @@
     <string name="dirac_preset_country">乡村</string>
     <string name="dirac_preset_dance">舞曲</string>
     <string name="dirac_preset_metal">金属</string>
-    <string name="dirac_preset_bass_booster">低音强化</string>
-    <string name="dirac_preset_live">现场</string>
-    <string name="dirac_preset_balanced">均衡</string>
-    <string name="dirac_preset_bass_reduction">低音弱化</string>
-    <string name="dirac_preset_treble_reduction">高音弱化</string>
-    <string name="dirac_preset_soft_bass">柔和低音</string>
-    <string name="dirac_preset_soft_treble">柔和高音</string>
-
-    <!-- kcal -->
-    <string name="presets_dialog_title">選擇預設</string>
-    <string name="advanced_settings_kcal">顯示顏色校準</string>
-    <string name="cat_colormanagement">顏色設置</string>
-    <string name="cat_calibration">顯示校準</string>
-    <string name="kcal_enabled">開啟</string>
-    <string name="kcal_disabled">關閉</string>
-    <string name="set_on_boot">開機設置</string>
-    <string name="color_red">紅色</string>
-    <string name="color_green">綠色</string>
-    <string name="color_blue">藍色</string>
-    <string name="color_minimum">最小</string>
-    <string name="saturation">飽和度</string>
-    <string name="value">值</string>
-    <string name="contrast">對比度</string>
-    <string name="hue">色相</string>
-    <string name="grayscale">灰度顯示</string>
-    <string name="kcal_reset">重置</string>
-
-     <!-- QS Tile -->
-     <string name="dirac_qs_tile_title">狄拉克聲音</string>
-
-     <!-- Torch -->
-     <string name="torch_title">手電筒設置</string>
-     <string name="torch_summary">手電筒白/黃控</string>
-     <string name="yellow_torch_brightness_title">黃手電筒亮度</string>
-     <string name="white_torch_brightness_title">白手電筒亮度</string>
-
-    <!-- Vibration Intensity -->
-    <string name="haptic_warning">設置觸覺級別過高可能會導致永久硬件損壞，使用風險自負</string>
-    <string name="haptic_summary">自定義振動強度</string>
-    <string name="vibrator_intensity_control">振動強度控制</string>
-    <string name="vmax_override_mode_title">覆蓋振動強度</string>
-    <string name="vmax_override_mode_summary">覆蓋所有通知事件的振動強度值</string>
-    <string name="system_strength_title">振動強度</string>
-
 </resources>

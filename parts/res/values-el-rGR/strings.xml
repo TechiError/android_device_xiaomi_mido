@@ -72,49 +72,4 @@
     <string name="dirac_preset_country">Κάντρι</string>
     <string name="dirac_preset_dance">Χορός</string>
     <string name="dirac_preset_metal">Μέταλ</string>
-
-    <string name="dirac_preset_bass_booster">Ενίσχυση μπάσων</string>
-    <string name="dirac_preset_live">Ζωντανά</string>
-    <string name="dirac_preset_balanced">Ισορροπημένο</string>
-    <string name="dirac_preset_bass_reduction">Μείωση μπάσων</string>
-    <string name="dirac_preset_treble_reduction">Μείωση τριπλά</string>
-    <string name="dirac_preset_soft_bass">Απαλό μπάσο</string>
-    <string name="dirac_preset_soft_treble">Απαλό πρίμα</string>
-
-    <!-- kcal -->
-    <string name="presets_dialog_title">Επιλέξτε προεπιλογή</string>
-    <string name="advanced_settings_kcal">Βαθμονόμηση χρώματος οθόνης</string>
-    <string name="cat_colormanagement">Ρυθμίσεις χρώματος</string>
-    <string name="cat_calibration">Βαθμονόμηση οθόνης</string>
-    <string name="kcal_enabled">Ενεργό</string>
-    <string name="kcal_disabled">Απενεργοποιημένο</string>
-    <string name="set_on_boot">Ρύθμιση κατά την εκκίνηση</string>
-    <string name="color_red">Κόκκινο</string>
-    <string name="color_green">Πράσινο</string>
-    <string name="color_blue">Μπλε</string>
-    <string name="color_minimum">Ελάχιστο</string>
-    <string name="saturation">Κορεσμός</string>
-    <string name="value">Τιμή</string>
-    <string name="contrast">Αντίθεση</string>
-    <string name="hue">Απόχρωση</string>
-    <string name="grayscale">Οθόνη σε κλίμακα του γκρι</string>
-    <string name="kcal_reset">Επαναφορά</string>
-
-    <!-- QS Tile -->
-    <string name="dirac_qs_tile_title">Ήχος Dirac</string>
-
-    <!-- Torch -->
-    <string name="torch_title">Ρυθμίσεις φακού</string>
-    <string name="torch_summary">Στοιχείο ελέγχου φακού λευκό/κίτρινο</string>
-    <string name="yellow_torch_brightness_title">Φωτεινότητα κίτρινου φακού</string>
-    <string name="white_torch_brightness_title">Φωτεινότητα λευκού φακού</string>
-
-    <!-- Vibration Intensity -->
-    <string name="haptic_warning">Η ρύθμιση του απτικού επιπέδου πολύ υψηλού μπορεί να προκαλέσει μόνιμη ζημιά στο υλικό, χρήση με δική σας ευθύνη</string>
-    <string name="haptic_summary">Προσαρμογή έντασης δόνησης</string>
-    <string name="vibrator_intensity_control">Έλεγχος έντασης κραδασμών</string>
-    <string name="vmax_override_mode_title">Παράκαμψη της έντασης δόνησης</string>
-    <string name="vmax_override_mode_summary">Αντικαθιστά την τιμή της έντασης δόνησης για όλα τα συμβάντα ειδοποιήσεων</string>
-    <string name="system_strength_title">Ισχύς κραδασμών</string>
-
 </resources>

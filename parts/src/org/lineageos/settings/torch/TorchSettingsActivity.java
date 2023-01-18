@@ -17,12 +17,11 @@
 
 package org.lineageos.settings.torch;
 
-import android.app.Fragment;
 import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
-import com.android.settingslib.collapsingtoolbar.R;
+import com.android.settingslib.widget.R;
 
 public class TorchSettingsActivity extends CollapsingToolbarBaseActivity {
 
@@ -32,15 +31,9 @@ public class TorchSettingsActivity extends CollapsingToolbarBaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        Fragment fragment = getFragmentManager().findFragmentById(android.R.id.content);
-        if (fragment == null) {
-            mTorchSettingsFragment = new TorchSettings();
-            getFragmentManager().beginTransaction()
-                    .add(R.id.content_frame, mTorchSettingsFragment)
-                    .commit();
-        } else {
-            mTorchSettingsFragment = (TorchSettings) fragment;
-        }
+        getFragmentManager().beginTransaction()
+            .replace(R.id.content_frame,  new TorchSettings())
+            .commit();
     }
 
     @Override

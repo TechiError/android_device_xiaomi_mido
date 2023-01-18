@@ -56,7 +56,6 @@
     <string name="dirac_preset_country">Country</string>
     <string name="dirac_preset_dance">Dance</string>
     <string name="dirac_preset_metal">Metal</string>
-
     <string name="dirac_preset_bass_booster">Reforçar graves</string>
     <string name="dirac_preset_live">Ao Vivo</string>
     <string name="dirac_preset_balanced">Equilibrado</string>
@@ -83,5 +82,4 @@
     <string name="hue">Matiz</string>
     <string name="grayscale">Exibição em tons de cinza</string>
     <string name="kcal_reset">Redefinir</string>
-
 </resources>

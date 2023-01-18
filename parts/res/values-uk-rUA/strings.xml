@@ -72,8 +72,6 @@
     <string name="dirac_preset_country">Кантрі</string>
     <string name="dirac_preset_dance">Танцювальна</string>
     <string name="dirac_preset_metal">Метал</string>
-    <!-- QS tile title -->
-    <string name="dirac_qs_tile_title">Dirac звук</string>
     <string name="dirac_preset_bass_booster">Підсилення басів</string>
     <string name="dirac_preset_live">Наживо</string>
     <string name="dirac_preset_balanced">Збалансована</string>
@@ -134,6 +132,8 @@
     <string name="preset_obsanity_ips">Obsanity IPS</string>
     <string name="preset_sir_banger">Сер Бенгер</string>
 
+    <!-- QS tile title -->
+    <string name="dirac_qs_tile_title">Dirac звук</string>
     <!-- Torch -->
     <string name="torch_title">Ліхтарик</string>
     <string name="torch_summary">Яскравість жовтого/білого світлодіода</string>
